@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+nav{
+    background-color: rgb(62, 26, 54);
+    color: aliceblue;
+    height: 50px;
+    font-size: 27px;
+    display: flex ;
+    align-items: center;
+    padding-left: 12px;
+
+      
+}
+nav ul{
+    list-style-type:none;
+   display: flex;
+}
+li{
+    margin:0px 10px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    padding:5px;
+    border-radius: 5px;
+}
+a:hover{
+    background-color: bisque;
+    color: black;
+}
+.gameContainer{
+margin: 5vw;
+display: flex;
+justify-content: center;
+display: flex;
+justify-content: space-evenly;
+
+}
+.container{
+    display: grid;
+    grid-template-rows: repeat(3,10vw) ;
+    grid-template-columns: repeat(3,10vw);
+
+
+}
+.box{
+    border: 2px solid black;
+    font-size: 9vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    background-color:rgb(230, 171, 230) ;
+}
+.gameInfo{
+    padding: 0 34px;
+    margin:50px;
+    font-size: 40px;
+    color: rgb(79, 82, 0);
+
+}
+.br-0{
+    border-right: 0;
+}
+
+.bl-0{
+    border-left: 0;
+}
+
+.bt-0{
+    border-top: 0;
+}
+
+.bb-0{
+    border-bottom: 0;
+}
+#resat{
+    font-size: 3VW;
+}
+.info{
+    font-size: 30px;
+    display: block;
+    padding:10px;
+    background-color: antiquewhite;
+    margin: 10px;
+    border-radius: 20px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+}
+.reset{
+    padding:10px;
+    margin:10px;
+    background-color:black;
+    color: white;
+    font-size: 30px;
+    width:200px;
+  
+}
+button{
+    border-radius: 20px;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width: 980px) {
+    body {
+      background-color: rgb(167, 202, 167);
+      margin: auto;
+    }
+    .gameContainer{
+        flex-direction: column;
+    }
+    .gameInfo{
+        font-size: 20px;
+        width:300px;
+        margin:auto;
+    }
+    .container{
+        margin: auto;
+    }
+    .info{
+        margin:30px auto;
+        
+    }
+  }
